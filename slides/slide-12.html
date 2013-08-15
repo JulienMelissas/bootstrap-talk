@@ -1,0 +1,32 @@
+<header>
+	<h1 class="page-header">Add Bootstrap to your HTML5* document</h1>
+	<p><small>* = you <strong>must</strong> declare your document as html5: <code>&lt;!DOCTYPE html&gt;</code></small></p>
+</header>
+<div class="content">
+	<h3>The quick and dirty:</h3>
+	<p>
+		Add the minified CSS and JS in the head, and include jQuery before the Bootstrap JS<br>
+		<pre>
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="bootstrap-min.css"&gt;
+&lt;script src="bootstrap-min.js"&gt;&lt;/script&gt;
+		</pre>
+		Any styles you don't like from Bootstrap you'll have to overwrite.<br>Another way to do it would be to use the customizer script they have to download a version with only the bits you need. <a href="http://getbootstrap.com/customize/">http://getbootstrap.com/customize/</a>
+	</p>
+	<br>
+	<h3>Use the CDN</h3>
+	<p>Details to use the CDN hosting Bootstrap's latest code <a href="http://getbootstrap.com/getting-started/#download-cdn">here.</a></p>
+	<br>
+	<h3>The <strong>real</strong> way to do it:</h3>
+	<p>
+		This method takes longer, and involves using a LESS to CSS compiler tool, but it allows you to really customize Bootstrap.
+		<ol>
+			<li>Download the Bootstrap source from Github.</li>
+			<li>Find the LESS and JS files (feel free to use the JS min file if only wanting to change things in the CSS) and copy into your own project.</li>
+			<li>Find a LESS compiler and import bootstrap.less, which refrences the other files.</li>
+			<li>Use that generated (and hopefully minified) file as your bootstrap stylesheet.</li>
+		</ol>
+
+		Some good LESS compilers are: <a href="https://incident57.com/codekit/">CodeKit</a> (Mac only), <a href="http://crunchapp.net/">Crunch App</a>, and <a href="http://wearekiss.com/simpless">Simpless</a>.
+	</p>
+</div>

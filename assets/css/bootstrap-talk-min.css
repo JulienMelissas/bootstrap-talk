@@ -1,0 +1,15 @@
+body {
+  background: #3591ba;
+}
+#wrap {
+  min-height: 500px;
+  margin-top: 15px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.slide-holder {
+  padding: 15px;
+}
+#slide-pagination {
+  text-align: center;
+}
